@@ -1,23 +1,34 @@
 int ledPin = 13;
-int flashLight = 5;
+int test = 10;
+int i;
 
 void setup() {
   // put your setup code here, to run once:
     pinMode(ledPin, OUTPUT);
+    
 }
 
 void loop() {
+  
+i + 1;
 
-//  digitalWrite(ledPin, LOW);
+if (i < 2) {
+  digitalWrite(ledPin, HIGH);
+  } else {
+    digitalWrite(ledPin, LOW);
+    }
   
 //  If check to see if the flashLight integer is equal to the number
-//    if (flashLight == 2){
+//    if (flashLight == 5){
 //        digitalWrite(ledPin, HIGH);
 //      }
 
 //  Flash the light in pin 13 every second
-    digitalWrite(ledPin, HIGH);
-    delay(1000);
-    digitalWrite(ledPin, LOW);
-    delay(1000);
-  }
+//    digitalWrite(ledPin, HIGH);
+//    delay(1000);
+//    digitalWrite(ledPin, LOW);
+//    delay(1000);
+    
+
+
+}
