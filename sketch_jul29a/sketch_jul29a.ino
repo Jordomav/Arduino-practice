@@ -10,13 +10,6 @@ void setup() {
 
 void loop() {
   
-i + 1;
-
-if (i < 2) {
-  digitalWrite(ledPin, HIGH);
-  } else {
-    digitalWrite(ledPin, LOW);
-    }
   
 //  If check to see if the flashLight integer is equal to the number
 //    if (flashLight == 5){
@@ -29,6 +22,16 @@ if (i < 2) {
 //    digitalWrite(ledPin, LOW);
 //    delay(1000);
     
-
+outsideFunction();
+delay(1000);
+outsideFunction();
+delay(1000);
 
 }
+
+void outsideFunction(){
+    digitalWrite(ledPin, HIGH);
+    delay(500);
+    digitalWrite(ledPin, LOW);
+    delay(500);
+  }
