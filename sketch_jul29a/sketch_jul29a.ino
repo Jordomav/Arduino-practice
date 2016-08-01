@@ -1,6 +1,5 @@
 int ledPin = 13;
 int test = 10;
-int i;
 int counter = 0;
 
 int incomingByte = 0;
@@ -55,10 +54,24 @@ void loop() {
 
 
 // Write an input from the user into the serial
+//if (Serial.available() > 0) {
+//    incomingByte = Serial.read();
+//    Serial.print("! ");
+//    Serial.write(incomingByte);
+//  }
+
+
+// Turn light on when "a" is pressed turn it off when "b" is pressed
 if (Serial.available() > 0) {
     incomingByte = Serial.read();
     Serial.print("! ");
     Serial.write(incomingByte);
+    if (incomingByte == 'a'){
+      digitalWrite(ledPin, HIGH);
+      }
+    if (incomingByte == 'b') {
+      digitalWrite(ledPin, LOW);
+      }
   }
 }
 
